@@ -17,7 +17,7 @@ var middleWare={
 app.use(middleWare.logger);
 
 app.get('/about',middleWare.requireAuthentication,function(req,res){
-res.send('About us');
+res.send('About us!');
 });
 
 app.use(express.static(__dirname+'/public'));
